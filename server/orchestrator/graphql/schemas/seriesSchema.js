@@ -41,7 +41,7 @@ const resolvers = {
         if (series) {
           return JSON.parse(series);
         } else {
-          series = await axios.get("http://localhost:3002/series");
+          series = await axios.get("http://localhost:1002/series");
           redis.set('series', JSON.stringify(series.data));
           return series.data;
         }
@@ -52,7 +52,7 @@ const resolvers = {
     oneSeries: async (_, args) => {
       try {
         const id = args.id
-        const series = await axios.get(`http://localhost:3002/series/${id}`);
+        const series = await axios.get(`http://localhost:1002/series/${id}`);
         return series.data;
       } catch (error) {
         console.log(error);
@@ -63,7 +63,7 @@ const resolvers = {
     insertSeries: async (_, args) => {
       try {
         const reqSeries = args.series;
-        const oneSeries = await axios.post(`http://localhost:3002/series`, reqSeries);
+        const oneSeries = await axios.post(`http://localhost:1002/series`, reqSeries);
         let series = await redis.get('series');
         if (series) {
           series = JSON.parse(series);
@@ -79,7 +79,7 @@ const resolvers = {
       try {
         const reqSeries = args.series;
         const id = args.id;
-        const series = await axios.patch(`http://localhost:3002/series/${id}`, reqSeries);
+        const series = await axios.patch(`http://localhost:1002/series/${id}`, reqSeries);
         return series.data;
       } catch (e) {
         console.log(e);
@@ -88,7 +88,7 @@ const resolvers = {
     deleteSeries: async (_, args) => {
       try {
         const id = args.id;
-        const oneSeries = await axios.delete(`http://localhost:3002/series/${id}`);
+        const oneSeries = await axios.delete(`http://localhost:1002/series/${id}`);
         let series = await redis.get('series');
         if (series) {
           series = JSON.parse(series);

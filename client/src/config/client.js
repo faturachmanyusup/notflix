@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, makeVar } from "@apollo/client";
 export const favorites = makeVar([]);
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/",
+  uri: "http://localhost:1000/",
   cache: new InMemoryCache({
     typePolicies: {
       Query: {
