@@ -1,0 +1,148 @@
+.App {
+  padding-bottom: 10px;
+  background-color: #000000;
+}
+
+.navbar {
+  background-color: #121212;
+}
+
+.navbar li {
+  cursor: pointer;
+  color: #0156B3;
+  filter: contrast(150%), brightness(200%);
+}
+
+.custom-container {
+  padding: 20px 40px;
+  background-color: #121212;
+  margin: 25px 10px;
+}
+
+.card {
+  background-color: #1A1A1A;
+  margin: 20px 12px;
+  color: whitesmoke;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+.card-title {
+  height: 30px;
+}
+
+.card li {
+  list-style: none;
+}
+
+.card-summary {
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-remove {
+  margin: 0 0 20px;
+  background-color: #3D3D3D;
+  color: rgb(247, 62, 62);
+}
+
+.btn-edit {
+  margin: 0 0 20px;
+  background-color: #3D3D3D;
+  color: rgb(124, 209, 198);
+}
+
+.btn-add-fav {
+  margin: 0 0 20px;
+  background-color: #3D3D3D;
+  color: rgb(130, 231, 104);
+}
+
+.btn-remove:hover {
+  color: rgb(247, 62, 62);
+  filter: brightness(130%);
+}
+
+.btn-edit:hover {
+  color: rgb(124, 209, 198);
+  filter: brightness(130%);
+}
+
+.btn-add-fav:hover {
+  color: rgb(65, 240, 22);
+  filter: brightness(130%);
+}
+
+.list-label {
+  color: #F5C518;
+  padding: 10px 0;
+}
+
+i {
+  margin-right: 5px;
+  color: rgb(241, 241, 38);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  background-color: #121212;
+  padding: 20px 40px;
+  margin: 25px 10px;
+}
+
+.form-container form {
+  color: white;
+  width: 600px;
+}
+
+.selected-genre {
+  padding: 0 1px;
+}
+
+.form-group {
+  padding: 10px 0;
+}
+
+.loading-container {
+  height: 668px;
+  background-color: #121212;
+  margin: 25px 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.loading-text {
+  margin-top: 30px;
+  color: rgb(162, 165, 180);
+}
+
+.fa-times {
+  cursor: pointer;
+}
+
+.detail-card {
+  background-color: #121212;
+  padding: 110px 150px;
+  margin: 25px 10px;
+}
+
+.overview {
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.empty-favorites {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
